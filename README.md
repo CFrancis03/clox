@@ -1,21 +1,36 @@
-# Clox++: A C++ Port of the Lox Interpreter
+# clox
 
-This is a C++ implementation of the **Lox** interpreter from Bob Nystrom's book _Crafting Interpreters_. It is a work-in-progress, faithful port of the original Java-based interpreter to a lower-level language for educational purposes.
+**clox** is a C++ port of the Lox tokenizer (scanner) from the book [Crafting Interpreters](https://craftinginterpreters.com/) by Bob Nystrom.
 
-## 📚 About
+This project currently implements **only the tokenizing (scanning)** phase of the Lox language, converting source code into a sequence of tokens via a REPL interface.
 
-_Lox_ is a dynamically-typed, object-oriented programming language implemented in Chapter 4 onward of *Crafting Interpreters*. This project reimplements the same language and interpreter logic in modern C++17.
+Support for files and the rest of the interpreter pipeline is planned for future development.
 
-The goal is to better understand:
-- Lexical analysis and tokenization
-- Interpreter design
-- Porting high-level designs to systems-level code
+---
 
-## 🔧 Build Instructions
+## 🔍 Features
 
-Make sure you have `g++` and `make` installed. Then run:
+- REPL-style input: type in Lox code line-by-line
+- Scanner/tokenizer converts input into:
+  - Keywords (`if`, `var`, `while`, etc.)
+  - Identifiers
+  - Numbers (ints & floats)
+  - Strings
+  - Symbols (`+`, `-`, `==`, etc.)
+- Clear formatted token output for debugging
+
+---
+
+## 🚧 Coming Soon
+
+- File-based source scanning
+- Parser and AST generation
+- Runtime evaluation (interpreter)
+
+---
+
+## 🛠️ Build and Run
 
 ```bash
 make
 ./lox
-
