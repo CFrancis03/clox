@@ -1,6 +1,6 @@
 # clox
 
-**clox** is a C++ port of the Lox tokenizer (scanner) from the book [Crafting Interpreters](https://craftinginterpreters.com/) by Bob Nystrom.
+**clox** is a C++ port of the Lox tokenizer (scanner) from the book [Crafting Interpreters](https://craftinginterpreters.com/) by  Nystrom.
 
 This project currently implements **only the tokenizing (scanning)** phase of the Lox language, converting source code into a sequence of tokens via a REPL interface.
 
